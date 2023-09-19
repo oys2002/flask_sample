@@ -1,0 +1,26 @@
+{%extends 'common.html'%}
+{%block content%}
+<h2><b>{%block title%}New User Registration{%endblock%}</b></h2>
+<div>
+<form action="/registeruser" method="post" id="regtable" name="registrationform">
+    <table id="regtable2">
+        <tr>
+            <td><input type="text" name="username" placeholder="Enter Your Name"></td>
+        </tr>
+        <tr>
+            <td><input type="password" name="password" placeholder="Enter Your password"></td>
+        </tr>
+        <tr>
+            <td><input type="email" name="email" placeholder="Enter Your email"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="location" placeholder="Enter Your location"> </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Register"> </td>
+        </tr>
+    </table>
+</div>
+</form>
+
+{%endblock%}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+   
+</head>
+<body>
+    <header>
+        <h1>If you are a new user, click here.</h1>
+    </header>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <b><h2>&copy; This is my second page.</b></h2>
+    </footer>
+</body>
+</html>
